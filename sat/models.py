@@ -5,7 +5,7 @@ import torch_geometric.nn as gnn
 from .layers import TransformerEncoderLayer
 from einops import repeat
 
-
+#To be checked
 class GraphTransformerEncoder(nn.TransformerEncoder):
     def forward(self, x, edge_index, complete_edge_index,
             subgraph_node_index=None, subgraph_edge_index=None,
